@@ -15,4 +15,8 @@
 			<description><![CDATA[Sidebar]]></description>
 		</area>
 	</areas>
+
+	<!-- Guid ready for the community. Todo : register and send this theme
+	<guid>F085317C-F25F-11E2-A984-A2D86188709B</guid>
+	-->
 </pluggable>
