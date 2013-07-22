@@ -3,7 +3,7 @@
         <div class="grid grid-pad">
             <div class="col-9-12" id="articles">
                 <?php foreach ( $posts as $post ) { ?>
-                    <div id="post-<?php echo $post->id; ?>" class="<?php echo $post->statusname; ?>">
+                    <article id="post-<?php echo $post->id; ?>" class="<?php echo $post->statusname; ?>">
                         <h2>
                             <a href="<?php echo $post->permalink; ?>" title="<?php echo $post->title; ?>"><?php echo $post->title_out; ?></a>
                         </h2>
@@ -22,7 +22,7 @@
                                 <?php } ?>
                             </ul>
                         </div>
-                    </div>
+                    </article>
                 <?php } ?>
                 <div class="pagenav clearfix">
                     <?php echo $theme->prev_page_link('&laquo; ' . _t('Newer Posts')); ?> <?php echo $theme->page_selector( null, array( 'leftSide' => 2, 'rightSide' => 2 ) ); ?> <?php echo $theme->next_page_link('&raquo; ' . _t('Older Posts')); ?>
