@@ -17,6 +17,8 @@
     <meta property="og:type" content="blog"/>
     <meta property="og:image" content="<?php Site::out_url( 'theme' ); ?>/screenshot.png" />
     <meta property="og:description" content="<?php Options::out( 'tagline' ) ?>">
+    <!-- Add your Google+ ID and remove this comment :) -->
+    <link rel="author" href="https://plus.google.com/xxxxxxxxxxxxxxxxxxxx/posts">
 
     <link rel="shortcut icon" type="image/png" href="<?php Site::out_url( 'theme' ); ?>/img/favicon.png">
     <link rel="stylesheet" href="<?php Site::out_url( 'theme' ); ?>/css/reset.css">
