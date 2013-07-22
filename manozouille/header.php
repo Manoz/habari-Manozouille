@@ -34,8 +34,10 @@
         <div class="grid grid-pad">
             <div class="col-1-1">
                 <div class="content">
-                    <h1><a href="<?php Site::out_url( 'habari'); ?>" title="<?php Options::out( 'title' ); ?>"> <?php Options::out( 'title' ); ?></a></h1>
-                    <h3>Hi, I'm a description bloc. Something like a lorem ipsum. I can write here what I want, even a book. It's totally responsive :)</h3>
+                    <hgroup>
+                        <h1><a href="<?php Site::out_url( 'habari'); ?>" title="<?php Options::out( 'title' ); ?>"> <?php Options::out( 'title' ); ?></a></h1>
+                        <h2><?php Options::out( 'tagline' ); ?></h2>
+                    </hgroup>
                     <div class="social">
                         <ul>
                             <li class="rss">

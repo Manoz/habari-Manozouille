@@ -76,16 +76,15 @@ strong {font-weight: 500;}
 /* =Header
 -------------------------------------------------------------------- */
 
-header .content {margin: 0 auto;}
 
-header h1 {
+header hgroup h1 {
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 30px;
 }
 
-header h3 {
+header hgroup h2 {
     width: 40%;
     margin: 10px auto;
     text-align: center;
