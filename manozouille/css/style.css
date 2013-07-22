@@ -1,0 +1,606 @@
+/*  ******************************************************************
+    Theme: Manozouille
+    Author: Manoz
+    Website: www.manoz.fr
+    Contact: kevin@manoz.fr
+    Twitter: @Manoz
+    Version: 1.0
+    -----------------------
+    Cleaned with CSSLisible - https://github.com/darklg/CSSLisible
+    **************************************************************** */
+
+/* Import lovely fonts :) */
+@import 'fonts.css';
+@import 'simplegrid.css';
+
+/* =Structure
+-------------------------------------------------------------------- */
+
+::-moz-selection {text-shadow: none;color: #fff;background: #e3745f;}
+::selection {text-shadow: none;color: #fff;background: #e3745f;}
+
+html {height:100%;}
+
+body {
+    font-family: 'museo300', sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #5A5A5A;
+    background: #eae7e4;
+    text-shadow: 0 1px 0 rgba(255,255,255,.6);
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #e3745f;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+a:hover {
+    color: #5A5A5A;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+a:active {
+    color: #333;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    -ms-transition: none;
+    transition: none;
+}
+
+strong {font-family: 'museo500', sans-serif;}
+
+
+/* =Header
+-------------------------------------------------------------------- */
+
+header .content {margin: 0 auto;}
+
+header h1 {
+    font-family: 'museo700', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header h3 {
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    color: #A0A0A0;
+    width: 40%;
+    margin: 10px auto;
+}
+
+header .social {text-align: center;}
+
+header .social ul li {
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+    margin-right: 5px;
+}
+
+/* Social media icons */
+li.rss a:before,
+li.twitter a:before,
+li.facebook a:before,
+li.blog a:before,
+li.github a:before {
+    font-family: 'fontello';
+    font-size: 25px;
+}
+
+li.rss a:before {content: '\e804';}
+li.twitter a:before {content: '\e802'; color: #2692d7;}
+li.facebook a:before {content: '\e803'; color: #4c66a4;}
+li.blog a:before {content: '\e805'; color: #5c5c5c;}
+li.github a:before {content: '\e800'; color: #5c5c5c;}
+
+.social ul li {
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+.social ul li:hover {
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    /* Animations */
+    -moz-transform: translateY(5px);
+    -webkit-transform: translateY(5px);
+    -o-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    transform: translateY(5px);
+}
+
+/* =Content
+-------------------------------------------------------------------- */
+
+.sep {
+    height: 1px;
+    margin: 15px auto;
+    max-width: 60%;
+    -webkit-box-shadow: 
+        0 1px 0 #b6b6b6, 
+        0 2px 0 rgba(255,255,255,.4);
+    box-shadow: 
+        0 1px 0 #b6b6b6, 
+        0 2px 0 rgba(255,255,255,.4);
+}
+
+/* =Posts
+-------------------------------------------------------------------- */
+
+/* Posts container */
+.published {
+    background: #f7f7f9;
+    border: 1px solid #C7C7C7;
+    -webkit-box-shadow: 
+        0 1px 0 rgba(0,0,0,.1);
+    box-shadow: 
+        0 1px 0 rgba(0,0,0,.1);
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+/* Title */
+.published h2 {
+    font-family: 'museo500', sans-serif;
+    font-size: 20px;
+    -webkit-box-shadow: 
+        0 1px 0 #D8D8D8, 
+        0 2px 0 rgba(255,255,255,.4);
+    box-shadow: 
+        0 1px 0 #D8D8D8, 
+        0 2px 0 rgba(255,255,255,.4);
+    margin: 0 0 8px;
+    padding: 10px;
+}
+
+/* Post content */
+.entry {padding: 0 20px 5px;}
+.entry p {margin: 15px 0;line-height: 1.1;}
+.entry strong {font-family: 'museo500', sans-serif;}
+
+/* Meta */
+.meta {
+    border-top: 1px solid #C7C7C7;
+    font-size: 14px;
+    color: #5c5c5c;
+    padding: 8px 20px;
+}
+
+.meta ul li {
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1; /* Fix for IE7 */
+    *display: inline; /* Fix for IE7 */
+}
+
+.meta ul li span {color: #868686;}
+
+.meta li.meta-date {
+    padding-left: 20px;
+    background: url('../img/compose.png') left center no-repeat;
+}
+
+.meta li.meta-author {
+    margin-left: 25px;
+    padding-left: 20px;
+    background: url('../img/user.png') left center no-repeat;
+}
+
+.meta li.meta-comments {
+    margin-left: 25px;
+    padding-left: 20px;
+    background: url('../img/plus.png') left center no-repeat;
+}
+
+/* Pagination */
+.pagenav {height: 33px;}
+.pagenav a {
+    background: #f7f7f9;
+    border: 1px solid #C7C7C7;
+    -webkit-box-shadow: 
+        0 1px 0 rgba(0,0,0,.1);
+    box-shadow: 
+        0 1px 0 rgba(0,0,0,.1);
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.pagenav a.current-page {
+    background: #EBEBEB;
+    -webkit-box-shadow: 
+        inset 0 0 3px rgba(0,0,0,.1);
+    box-shadow: 
+        inset 0 0 3px rgba(0,0,0,.1);
+    border: 1px solid #D1D1D1;
+}
+
+/* =Comments
+-------------------------------------------------------------------- */
+
+.comments {
+    background: #f7f7f9;
+    border: 1px solid #C7C7C7;
+    -webkit-box-shadow: 
+        0 1px 0 rgba(0,0,0,.1);
+    box-shadow: 
+        0 1px 0 rgba(0,0,0,.1);
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.comments h2 {
+    font-family: 'museo500', sans-serif;
+    font-size: 20px;
+    -webkit-box-shadow: 
+        0 1px 0 #D8D8D8, 
+        0 2px 0 rgba(255,255,255,.4);
+    box-shadow: 
+        0 1px 0 #D8D8D8, 
+        0 2px 0 rgba(255,255,255,.4);
+    margin: 0 0 8px;
+    padding: 10px;
+}
+
+ul.comment-list {padding: 5px 20px;}
+
+li.comment {
+    padding: 10px 20px;
+    margin: 15px 0;
+    -webkit-box-shadow: 
+        inset 0 0 5px #9E9E9E;
+    box-shadow: 
+        inset 0 0 5px #9E9E9E;
+    background: #F0F0F0;
+}
+
+li.comment-unapproved {
+    padding: 10px 20px;
+    margin: 15px 0;
+    -webkit-box-shadow: 
+        inset 0 0 5px #AD7373;
+    box-shadow: 
+        inset 0 0 5px #AD7373;
+    background: #FFF4F4;
+}
+
+.comment-content {padding-left: 10px;}
+
+.comment-meta {
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+}
+
+.comment-meta h5 {
+    font-style: italic;
+    color: #BD0000;
+}
+
+.comment:nth-child(odd) {
+    -webkit-box-shadow: 
+        0 0 4px #9E9E9E;
+    box-shadow: 
+        0 0 4px #9E9E9E;
+    background: #FCFCFC;
+}
+
+/* Smileys */
+span#triste:after,
+span#content:after,
+span#supercontent:after {
+    font-family: 'fontello';
+}
+
+span#triste:after {content: '\e807';}
+span#content:after {content: '\e80b';}
+span#supercontent:after {content: '\e812';}
+
+/* =Sidebar
+-------------------------------------------------------------------- */
+
+.sidebar {
+    background: #f7f7f9;
+    border: 1px solid #C7C7C7;
+    -webkit-box-shadow: 
+        0 1px 0 rgba(0,0,0,.1);
+    box-shadow: 
+        0 1px 0 rgba(0,0,0,.1);
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.recent-posts h2 {
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'museo300', sans-serif;
+}
+
+.recent-posts ul {
+    padding: 0 10px 10px 26px;
+    list-style: disc;
+}
+
+.recent-posts ul li {
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+.recent-posts ul li:hover {
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    /* Animations */
+    -moz-transform: translateX(5px);
+    -webkit-transform: translateX(5px);
+    -o-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    transform: translateX(5px);
+}
+
+/* =404
+-------------------------------------------------------------------- */
+
+.not-found {
+    padding: 20px;
+    background: #f7f7f9;
+    border: 1px solid #C7C7C7;
+    -webkit-box-shadow: 
+        0 1px 0 rgba(0,0,0,.1);
+    box-shadow: 
+        0 1px 0 rgba(0,0,0,.1);
+    border-radius: 3px;
+}
+
+.not-found h4 {
+    font-size: 18px;
+    text-align: center;
+    font-family: 'museo500', sans-serif;
+}
+
+.not-found #triste {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.not-found #triste:before {
+    font-family: 'fontello';
+    content: '\e810';
+    font-size: 40px;
+}
+
+/* =Forms
+-------------------------------------------------------------------- */
+
+/* Forms structure */
+#searchform input , 
+.formcontrol input {
+    -webkit-box-shadow: 
+        inset 0 0 2px #9E9E9E;
+    box-shadow: 
+        inset 0 0 2px #9E9E9E;
+    background: #FAFAFA;
+    border: none;
+    width: 200px;
+    padding: 5px;
+    color: #B3B3B3;
+    font-style: italic;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+#searchform input:hover,
+.formcontrol input:hover, 
+#searchform input#searchsubmit:hover {
+    -webkit-box-shadow: 
+        inset 0 0 2px #9E9E9E;
+    box-shadow: 
+        inset 0 0 2px #9E9E9E;
+    background: #F0F0F0;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+#searchform input:focus,
+.formcontrol input:focus {
+    -webkit-box-shadow: 
+        inset 0 0 2px #9E9E9E;
+    box-shadow: 
+        inset 0 0 2px #9E9E9E;
+    background: #F0F0F0;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+/* Comments form */
+form.commentform {padding: 0 20px 20px;}
+
+#cf_commenterinfo legend {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-family: 'museo500', sans-serif;
+}
+
+#cf_commenterinfo p {margin-bottom: 5px;}
+
+#cf_commenterinfo p em small {
+    font-size: 13px;
+    font-style:italic;
+    margin-bottom:5px;
+}
+
+#cf_commenterinfo .formcontrol {margin: 5px 0;}
+.formcontrol label {font-family: 'museo500', sans-serif;}
+.formcontrol span {font-family: 'museo300', sans-serif;}
+span.required {font-size: 13px; color: #d88;}
+
+.formcontrol textarea {
+    -webkit-box-shadow: 
+        inset 0 0 2px #9E9E9E;
+    box-shadow: 
+        inset 0 0 2px #9E9E9E;
+    background: #FAFAFA;
+    width: 100%;
+    border: none;
+    -webkit-resize: none;
+    -moz-resize: none;
+    resize: none;
+    padding: 5px;
+    color: #838383;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+.formcontrol textarea:hover {
+    -webkit-box-shadow: 
+        inset 0 0 2px #9E9E9E;
+    box-shadow: 
+        inset 0 0 2px #9E9E9E;
+    background: #F0F0F0;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.formcontrol textarea:focus {
+    -webkit-box-shadow: 
+        inset 0 0 2px #9E9E9E;
+    box-shadow: 
+        inset 0 0 2px #9E9E9E;
+    background: #F0F0F0;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+/* Search form */
+
+#searchform input#searchsubmit {
+    margin: 5px 0;
+    cursor: pointer;
+    background: #E0E0E0;
+    box-shadow: 
+        0 1px 0 #CECECE, 
+        inset 0 0 1px #9E9E9E, 
+        inset 0 2px 0 rgba(255,255,255,.5);
+    -webkit-box-shadow: 
+        0 1px 0 #CECECE, 
+        inset 0 0 1px #9E9E9E, 
+        inset 0 2px 0 rgba(255,255,255,.5);
+    color: #808080;
+    border-radius: 3px;
+}
+
+/* =Search page
+-------------------------------------------------------------------- */
+
+h2.search-title {
+    font-family: 'museo500', sans-serif;
+    font-size: 20px;
+    margin: 0 0 8px;
+}
+
+/* =Login page - SOON
+-------------------------------------------------------------------- */
+
+/* =Footer
+-------------------------------------------------------------------- */
+
+footer p {
+    text-align: center;
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+footer p a sub {
+    vertical-align: sub;
+}
+
+footer p:before,
+footer #ange:before {
+    font-family: 'fontello';
+    margin-right: 5px;
+}
+
+footer p:before {content: '\e80e';}
+footer #ange:before {content: '\e815';}
+
+
+/* =Misc
+-------------------------------------------------------------------- */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+input[type="url"],
+input[type="text"], 
+input[type="email"], 
+input[type="submit"], 
+input[type="password"], 
+textarea, 
+select { 
+    outline: none;
+}
+
+/* =Responsive stuff
+-------------------------------------------------------------------- */
+
+@media handheld, only screen and (max-width: 767px) {
+    header h3 {width: 100%;}
+    .sep {max-width: 100%;}
+    .meta ul li.meta-author {margin-left: 20px;}
+    .meta ul li.meta-comments {margin-left: 0;margin-top: 3px;}
+    .formcontrol textarea {width: 100%}
+}
