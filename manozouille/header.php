@@ -21,7 +21,7 @@
     <link rel="shortcut icon" type="image/png" href="<?php Site::out_url( 'theme' ); ?>/img/favicon.png">
     <link rel="stylesheet" href="<?php Site::out_url( 'theme' ); ?>/css/reset.css">
     <link rel="stylesheet" href="<?php Site::out_url( 'theme' ); ?>/css/style.css">
-    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500,700' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href="http://fonts.googleapis.com/css?family=Nunito:400,300,700">
 
     <!--[if lt IE 9]>
     <script src="<?php Site::out_url( 'theme' ); ?>/js/html5shiv.js"></script>
