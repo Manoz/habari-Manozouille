@@ -11,7 +11,7 @@
                             <a href="<?php echo $post->permalink; ?>" title="<?php echo $post->title; ?>"><?php echo $post->title_out; ?></a>
                         </h2>
 
-                        <div class="entry" id="home">
+                        <div class="entry">
                             <?php echo $post->content_excerpt; ?>                            
                         </div>
 

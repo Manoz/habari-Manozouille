@@ -9,7 +9,7 @@
                                 <a href="<?php echo $post->permalink; ?>" title="<?php echo $post->title; ?>"><?php echo $post->title_out; ?></a>
                             </h2>
                         </header>
-                        <div class="entry" id="home">
+                        <div class="entry">
                             <?php echo $post->content_excerpt; ?>                            
                         </div>
                         <footer>
