@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?3974377');
+  src: url('../fonts/fontello.eot?3974377#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.woff?3974377') format('woff'),
+       url('../fonts/fontello.ttf?3974377') format('truetype'),
+       url('../fonts/fontello.svg?3974377#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* My iconic font
+.icon-rss:before { content: '\e804'; }
+.icon-emo-happy:before { content: '\e806'; } ---------  :)
+.icon-emo-wink:before { content: '\e808'; } ----------  ;)
+.icon-emo-unhappy:before { content: '\e807'; } -------  :(
+.icon-emo-sleep:before { content: '\e80a'; } ---------  |(
+.icon-emo-thumbsup:before { content: '\e80b'; } ------  Thumbup
+.icon-emo-surprised:before { content: '\e80c'; } -----  :o
+.icon-emo-tongue:before { content: '\e80d'; } --------  :p
+.icon-emo-coffee:before { content: '\e80e'; } --------  Coffee
+.icon-emo-sunglasses:before { content: '\e80f'; } ----  8D
+.icon-emo-displeased:before { content: '\e810'; } ----  :/
+.icon-emo-beer:before { content: '\e811'; } ----------  Beer
+.icon-emo-grin:before { content: '\e812'; } ----------  :D
+.icon-emo-angry:before { content: '\e813'; } ---------  -_-
+.icon-emo-saint:before { content: '\e815'; } ---------  Ange
+.icon-emo-cry:before { content: '\e814'; } -----------  :'(
+.icon-emo-laugh:before { content: '\e816'; } ---------  ^^
+.icon-emo-wink2:before { content: '\e809'; } ---------  ;) reverse
+.icon-github:before { content: '\e800'; }
+.icon-facebook-circled:before { content: '\e803'; }
+.icon-tumblr-circled:before { content: '\e802'; }
+.icon-doc-text:before { content: '\e805'; }
+.icon-link:before { content: '\e801'; }
+*/
