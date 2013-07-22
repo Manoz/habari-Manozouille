@@ -425,141 +425,116 @@ span#supercontent:after {content: '\e812';}
 /* =Forms
 -------------------------------------------------------------------- */
 
-/* Forms structure */
-#login-content input, 
-#searchform input , 
-.formcontrol input {
-    -webkit-box-shadow: 
-        inset 0 0 2px #9E9E9E;
-    box-shadow: 
-        inset 0 0 2px #9E9E9E;
-    background: #FAFAFA;
-    border: none;
-    width: 200px;
-    padding: 5px;
-    color: #B3B3B3;
-    font-style: italic;
-    -webkit-transition: all .2s ease-out;
-    -moz-transition: all .2s ease-out;
-    -o-transition: all .2s ease-out;
-    -ms-transition: all .2s ease-out;
-    transition: all .2s ease-out;
-}
-
-#login-content input:hover, 
-#searchform input:hover,
-.formcontrol input:hover, 
-#searchform input#searchsubmit:hover {
-    -webkit-box-shadow: 
-        inset 0 0 2px #9E9E9E;
-    box-shadow: 
-        inset 0 0 2px #9E9E9E;
-    background: #F0F0F0;
-    -webkit-transition: all .3s ease-out;
-    -moz-transition: all .3s ease-out;
-    -o-transition: all .3s ease-out;
-    -ms-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-}
-
-#login-content input:focus, 
-#searchform input:focus,
-.formcontrol input:focus {
-    -webkit-box-shadow: 
-        inset 0 0 2px #9E9E9E;
-    box-shadow: 
-        inset 0 0 2px #9E9E9E;
-    background: #F0F0F0;
-    -webkit-transition: all .3s ease-out;
-    -moz-transition: all .3s ease-out;
-    -o-transition: all .3s ease-out;
-    -ms-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-}
-
-/* Comments form */
 form.commentform {padding: 0 20px 20px;}
 
-#cf_commenterinfo legend {
-    font-size: 18px;
-    margin-bottom: 5px;
+/* Fields + textarea */
+fieldset label, 
+fieldset legend {
     font-weight: 500;
 }
 
-#cf_commenterinfo p {margin-bottom: 5px;}
-
-#cf_commenterinfo p em small {
-    font-size: 13px;
-    font-style:italic;
-    margin-bottom:5px;
-}
-
-#cf_commenterinfo .formcontrol {margin: 5px 0;}
-.formcontrol label {font-weight: 500;}
-.formcontrol span {font-weight: 300;}
-span.required {font-size: 13px; color: #d88;}
-
-.formcontrol textarea {
+#cf_content textarea,
+#cf_commenterinfo input {
+    width: 250px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: none;
+    font-style: italic;
+    color: #B3B3B3;
+    background: #FAFAFA;
     -webkit-box-shadow: 
+        0 1px 0 #d8d8d8,
         inset 0 0 2px #9E9E9E;
     box-shadow: 
+        0 1px 0 #d8d8d8,
         inset 0 0 2px #9E9E9E;
-    background: #FAFAFA;
-    width: 100%;
-    border: none;
-    -webkit-resize: none;
-    -moz-resize: none;
-    resize: none;
-    padding: 5px;
-    color: #838383;
     -webkit-transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
-    -o-transition: all .2s ease-out;
     -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    resize: none;
+    -webkit-resize: none;
+    -moz-resize: none;
+}
+
+#cf_content textarea:hover, 
+#cf_content textarea:focus, 
+#cf_commenterinfo input:hover, 
+#cf_commenterinfo input:focus {
+    -webkit-box-shadow: 
+        inset 0 0 3px rgba(158,158,158,.6);
+    box-shadow: 
+        inset 0 0 3px rgba(158,158,158,.6);
+    background: #F1F1F1;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+#cf_content textarea {width: 100%;}
+
+.required {
+    font-weight: 300;
+    font-size: 13px;
+    color: #d88;
+}
+
+.disclamer {
+    font-size: 13px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+/* Buttons */
+.button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+    color: #B3B3B3;
+    background: #FAFAFA;
+    -webkit-box-shadow: 
+        0 1px 0 #d8d8d8, 
+        inset 0 0 2px #9E9E9E;
+    box-shadow: 
+        0 1px 0 #d8d8d8, 
+        inset 0 0 2px #9E9E9E;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
     transition: all .2s ease-out;
 }
 
-.formcontrol textarea:hover {
+input[type="submit"]:hover {
+    background: #FFF;
     -webkit-box-shadow: 
-        inset 0 0 2px #9E9E9E;
+        0 0 3px rgba(158,158,158,.6);
     box-shadow: 
-        inset 0 0 2px #9E9E9E;
-    background: #F0F0F0;
-    -webkit-transition: all .3s ease-out;
-    -moz-transition: all .3s ease-out;
-    -o-transition: all .3s ease-out;
-    -ms-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-}
-
-.formcontrol textarea:focus {
-    -webkit-box-shadow: 
-        inset 0 0 2px #9E9E9E;
-    box-shadow: 
-        inset 0 0 2px #9E9E9E;
-    background: #F0F0F0;
-    -webkit-transition: all .3s ease-out;
-    -moz-transition: all .3s ease-out;
-    -o-transition: all .3s ease-out;
-    -ms-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-}
-
-/* Search form */
-#searchform input#searchsubmit {
-    margin: 5px 0;
+        0 0 3px rgba(158,158,158,.6);
     cursor: pointer;
-    background: #E0E0E0;
-    box-shadow: 
-        0 1px 0 #CECECE, 
-        inset 0 0 1px #9E9E9E, 
-        inset 0 2px 0 rgba(255,255,255,.5);
-    -webkit-box-shadow: 
-        0 1px 0 #CECECE, 
-        inset 0 0 1px #9E9E9E, 
-        inset 0 2px 0 rgba(255,255,255,.5);
-    color: #808080;
     border-radius: 3px;
+}
+
+input[type="submit"]:focus {
+    background: #F1F1F1;
+    -webkit-box-shadow: 
+        inset 0 0 3px rgba(158,158,158,.6);
+    box-shadow: 
+        inset 0 0 3px rgba(158,158,158,.6);
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+} 
+
+.error {
+    color: #d88;
+    font-weight: 500;
 }
 
 /* =Search page
@@ -647,16 +622,12 @@ footer #ange:before {content: '\e815';}
     height: 0;
 }
 
-input[type="url"],
+input[type="url"], 
 input[type="text"], 
 input[type="email"], 
 input[type="submit"], 
-input[type="password"],
-textarea,
-select {
-    margin-bottom: 10px;
-    padding-bottom: 0;
-    border-bottom: 1px solid #d8d8d8;
+input[type="password"], 
+textarea {
     outline: none;
 }
 

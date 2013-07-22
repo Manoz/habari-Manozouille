@@ -4,8 +4,6 @@
  * All this file content is in french.
  * Exemple : 'more' mean 'Lire la suite'
  *
- * @todo comments, everywhere
- * @todo better contact form with templates (thems/manozouille/inc/an-element_form.php)
  * @todo find a trick to translate this with .po files
  *
  */
@@ -33,22 +31,44 @@
         }
     }
 
+    /*
+     * Form by Mzingui_v2
+     * Url : https://github.com/miklb/Mzingi_v2/tree/master/forms
+    */
     public function action_form_comment( $form ) { 
-        $form->append( 'fieldset', 'cf_commenterinfo', _t( ' ' ) );
+        // Create all fields template
+        $this->add_template('formcontrol_form', dirname(__FILE__).'/forms/formcontrol_form.php', true);
+        $this->add_template('formcontrol_submit', dirname(__FILE__).'/forms/formcontrol_submit.php', true);
+        $this->add_template( 'manozouille_email', dirname(__FILE__).'/forms/formcontrol_email.php' );
+        $this->add_template( 'manozouille_url', dirname(__FILE__).'/forms/formcontrol_url.php' );
+        $this->add_template('formcontrol_textarea', dirname(__FILE__).'/forms/formcontrol_textarea.php', true);
+        $this->add_template('formcontrol_text', dirname(__FILE__).'/forms/formcontrol_text.php', true);     
+        $form->cf_email->template = 'manozouille_email';
+        $form->cf_url->template = 'manozouille_url';
+
+        // Add infos Fieldset and move on top
+        $form->append( 'fieldset', 'cf_commenterinfo'/* *Add label ? **, _t( 'Tell Me About Yourself' )*/);
         $form->move_before( $form->cf_commenterinfo, $form->cf_commenter );
-        $form->cf_commenter->move_into( $form->cf_commenterinfo );
-        $form->cf_commenter->caption = _t( 'Pseudo/Prénom :' ) . '<span class="required">' . ( Options::get( 'comments_require_id' ) == 1 ? ' *' . _t( 'Required' ) : '' ) . '</span>';
+        
+        // Move the fields into info fieldset
+        $form->cf_commenter->move_into($form->cf_commenterinfo);
         $form->cf_email->move_into( $form->cf_commenterinfo );
-        $form->cf_email->caption = _t( 'Email :' ) . '<span class="required">' . ( Options::get( 'comments_require_id' ) == 1 ? ' *' . _t( 'Required' ) : '' ) . '</span>';
         $form->cf_url->move_into( $form->cf_commenterinfo );
-        $form->cf_url->caption = _t( 'Site/blog :' );
-        $form->append('static','cf_disclaimer', _t( '<p><em><small>Votre adresse email ne sera pas publiée.</small></em></p>' ) );
-        $form->cf_disclaimer->move_into( $form->cf_commenterinfo );
-        $form->append('fieldset', 'cf_contentbox', _t( ' ' ) );
-        $form->move_before( $form->cf_contentbox, $form->cf_content );
-        $form->cf_content->move_into( $form->cf_contentbox );
-        $form->cf_content->caption = _t( 'Message: <span>(obligatoire)</span>' );
+
+        // Add "message" fieldset
+        $form->append ( 'fieldset', 'cf_commentermsg');
+
+        // Move textarea and label into "Message" fieldset
+        $form->cf_content->move_into($form->cf_commentermsg);
+
+        // Add submit button and move it after "message" fieldset
         $form->cf_submit->caption = _t( 'Submit' );
+        $form->cf_submit->move_after($form->cf_commentermsg);
+
+        // Add email disclamer and move it into info fieldset
+        $form->append('static','cf_disclaimer', _t( '<p class="disclamer"><small>Votre adresse email ne sera pas publiée.</small></p>' ) );
+        $form->cf_disclaimer->move_into($form->cf_commenterinfo);
     }
+
 }
 ?>
