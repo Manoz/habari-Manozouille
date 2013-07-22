@@ -13,7 +13,7 @@
     <meta name="viewport" content="initial-scale=1.0,width=device-width">
 
     <meta property="og:title" content="<?php Options::out( 'title' ) ?>"/>
-    <meta property="og:url" content="http://notes.manoz.fr"/>
+    <meta property="og:url" content="<?php Site::out_url('habari'); ?>"/>
     <meta property="og:type" content="blog"/>
     <meta property="og:image" content="<?php Site::out_url( 'theme' ); ?>/screenshot.png" />
     <meta property="og:description" content="<?php Options::out( 'tagline' ) ?>">
