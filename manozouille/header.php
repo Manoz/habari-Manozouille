@@ -36,25 +36,13 @@
                 <div class="content">
                     <h1><a href="<?php Site::out_url( 'habari'); ?>" title="<?php Options::out( 'title' ); ?>"> <?php Options::out( 'title' ); ?></a></h1>
                     <h2><?php Options::out( 'tagline' ); ?></h2>
-                    <div class="social">
-                        <ul>
-                            <li class="rss">
-                                <a title="S'abonner au flux RSS" target="_blank" href="<?php echo $theme->feed_alternate(); ?>"></a>
-                            </li>
-                            <li class="facebook">
-                                <a title="Me retrouver sur Facebook" target="_blank" href="https://www.facebook.com/lboldair"></a>
-                            </li>
-                            <li class="twitter">
-                                <a title="Suivez-moi sur Twitter" target="_blank" href="http://www.twitter.com/Manoz"></a>
-                            </li>
-                            <li class="blog">
-                                <a title="Mon autre blog" target="_blank" href="http://www.manoz.fr/"></a>
-                            </li>
-                            <li class="github">
-                                <a title="For this theme on Github" target="_blank" href="https://github.com/Manoz/Manozouille"></a>
-                            </li>
-                        </ul>
-                    </div>
+                    <nav class="social" role="navigation">
+                        <a class="rss" title="S'abonner au flux RSS" target="_blank" href="<?php echo $theme->feed_alternate(); ?>"></a>
+                        <a class="facebook" title="Me retrouver sur Facebook" target="_blank" href="https://www.facebook.com/lboldair"></a>
+                        <a class="twitter" title="Suivez-moi sur Twitter" target="_blank" href="http://www.twitter.com/Manoz"></a>
+                        <a class="blog" title="Mon autre blog" target="_blank" href="http://www.manoz.fr/"></a>
+                        <a class="github" title="For this theme on Github" target="_blank" href="https://github.com/Manoz/Manozouille"></a>
+                    </nav>
                 </div>
                 <div class="sep"></div>
             </div>

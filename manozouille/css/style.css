@@ -76,15 +76,14 @@ strong {font-weight: 400;}
 /* =Header
 -------------------------------------------------------------------- */
 
-
-header h1 {
+header[role="banner"] h1 {
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 30px;
 }
 
-header h2 {
+header[role="banner"] h2 {
     width: 40%;
     margin: 10px auto;
     text-align: center;
@@ -95,7 +94,42 @@ header h2 {
 
 header .social {text-align: center;}
 
-header .social ul li {
+
+/* Social media icons */
+a.rss:before,
+a.twitter:before,
+a.facebook:before,
+a.blog:before,
+a.github:before {
+    font-family: 'fontello';
+    font-size: 25px;
+}
+
+a.rss:before {
+    content: '\e804';
+}
+
+a.twitter:before {
+    content: '\e802';
+    color: #2692d7;
+}
+
+a.facebook:before {
+    content: '\e803';
+    color: #4c66a4;
+}
+
+a.blog:before {
+    content: '\e805';
+    color: #5c5c5c;
+}
+
+a.github:before {
+    content: '\e800';
+    color: #5c5c5c;
+}
+
+nav.social a {
     display: inline-block;
     zoom: 1;
     margin-right: 5px;
@@ -103,49 +137,9 @@ header .social ul li {
     *display: inline;
 }
 
-/* Social media icons */
-li.rss a:before,
-li.twitter a:before,
-li.facebook a:before,
-li.blog a:before,
-li.github a:before {
-    font-family: 'fontello';
-    font-size: 25px;
-}
 
-li.rss a:before {
-    content: '\e804';
-}
 
-li.twitter a:before {
-    content: '\e802';
-    color: #2692d7;
-}
-
-li.facebook a:before {
-    content: '\e803';
-    color: #4c66a4;
-}
-
-li.blog a:before {
-    content: '\e805';
-    color: #5c5c5c;
-}
-
-li.github a:before {
-    content: '\e800';
-    color: #5c5c5c;
-}
-
-.social ul li {
-    -webkit-transition: all .2s ease-out;
-    -moz-transition: all .2s ease-out;
-    -ms-transition: all .2s ease-out;
-    -o-transition: all .2s ease-out;
-    transition: all .2s ease-out;
-}
-
-.social ul li:hover {
+nav.social a:hover {
     -webkit-transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
     -ms-transition: all .2s ease-out;
@@ -618,22 +612,22 @@ h2.search-title {
 /* =Footer
 -------------------------------------------------------------------- */
 
-footer p {
+footer.footer p {
     text-align: center;
     margin: 5px 0;
     font-size: 13px;
 }
 
-footer p a sub {vertical-align: sub;}
+footer.footer p a sub {vertical-align: sub;}
 
-footer p:before,
-footer #ange:before {
+footer.footer p:before,
+footer.footer #ange:before {
     font-family: 'fontello';
     margin-right: 5px;
 }
 
-footer p:before {content: '\e80e';}
-footer #ange:before {content: '\e815';}
+footer.footer p:before {content: '\e80e';}
+footer.footer #ange:before {content: '\e815';}
 
 
 /* =Misc

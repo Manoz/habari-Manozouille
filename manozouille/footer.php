@@ -1,4 +1,4 @@
-    <footer>
+    <footer class="footer">
         <div class="grid grid-pad">
             <div class="col-1-1">
                 <p><strong>Fueled</strong> with <a target="_blank" title="Caffeine" href="https://en.wikipedia.org/wiki/Caffeine">C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub></a> | <strong id="ange"><?php _e('Powered by'); ?></strong> <a href="http://www.habariproject.org/" title="Habari">Habari</a></p>
