@@ -137,8 +137,6 @@ nav.social a {
     *display: inline;
 }
 
-
-
 nav.social a:hover {
     -webkit-transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
@@ -453,6 +451,7 @@ fieldset legend {
     font-weight: 400;
 }
 
+#searchform input#s, 
 #cf_content textarea,
 #cf_commenterinfo input {
     width: 250px;
@@ -478,6 +477,8 @@ fieldset legend {
     -moz-resize: none;
 }
 
+#searchform input#s:hover, 
+#searchform input#s:focus, 
 #cf_content textarea:hover, 
 #cf_content textarea:focus, 
 #cf_commenterinfo input:hover, 
@@ -564,6 +565,11 @@ h2.search-title {
     font-weight: 400;
     font-size: 20px;
     margin: 0 0 8px;
+}
+
+#searchsubmit {
+    width: 200px;
+    padding: 5px;
 }
 
 /* =Login page - SOON
