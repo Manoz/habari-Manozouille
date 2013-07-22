@@ -19,14 +19,15 @@ Stay tuned, watch it, star it fork it :)
 - [x] Complete skeleton.
 - [x] Add some style, lot of style
 - [x] Drink Coffee
-- [ ] Correct all CSS
-- [ ] Add and check all prefix (-moz-, -webkit-, ...)
-- [ ] Make the CSS readable with CSSLisible.
-- [ ] Drink Coffee
+- [x] Correct all CSS
+- [x] Add and check all prefix (-moz-, -webkit-, ...)
+- [x] Make the CSS readable with CSSLisible.
+- [x] Drink Coffee
 - [ ] Correct all PHP
 - [ ] Add some features
 - [ ] Drink Coffee
 - [ ] Translate in English
 - [ ] Push all files
 - [ ] Make a demo Github page
-- [ ] Drink Coffee
+- [ ] Write a complete doc
+- [ ] Sleep
