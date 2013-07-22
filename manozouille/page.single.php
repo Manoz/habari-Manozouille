@@ -9,11 +9,16 @@
 					<div class="entry">
 						<?php echo $post->content_out; ?>
 					</div>
-					<div class="entryMeta">
-						<?php if ( $loggedin ) { ?>
-							<a href="<?php echo $post->editlink; ?>" title="<?php _e('Edit post'); ?>"><?php _e('Edit'); ?></a>
-						<?php } ?>
-					</div>
+                    <div class="meta">
+                        <ul>
+                            <li class="meta-date"><?php echo $post->pubdate_out; ?></li>
+                            <li class="meta-author"><strong>Par</strong> Manoz</li>
+                            <li class="meta-comments"><?php echo $theme->comments_link($post,'%d commentaires','%d commentaire','%d commentaires'); ?></li>
+                            <?php if ( count( $post->tags ) > 0 )  { ?>
+                            <li class="meta-tags"><strong><?php _e('Tagged:'); ?></strong> <?php echo $post->tags_out; ?></li>
+                            <?php } ?>
+                        </ul>
+                    </div>
 				</div>
 			</div>
 			<div class="col-3-12" id="sidebar">

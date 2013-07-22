@@ -228,21 +228,25 @@ li.github a:before {
 
 .meta ul li span {color: #868686;}
 
+.meta li {padding-left: 20px;}
+
 .meta li.meta-date {
-    padding-left: 20px;
     background: url('../img/compose.png') left center no-repeat;
 }
 
 .meta li.meta-author {
     margin-left: 25px;
-    padding-left: 20px;
     background: url('../img/user.png') left center no-repeat;
 }
 
 .meta li.meta-comments {
     margin-left: 25px;
-    padding-left: 20px;
+    margin-right: 25px;
     background: url('../img/plus.png') left center no-repeat;
+}
+
+.meta li.meta-tags {
+    background: url('../img/tags.png') left center no-repeat;
 }
 
 /* Pagination */

@@ -18,7 +18,7 @@
                                 <li class="meta-author"><strong>Par</strong> Manoz</li>
                                 <li class="meta-comments"><?php echo $theme->comments_link($post,'%d commentaires','%d commentaire','%d commentaires'); ?></li>
                                 <?php if ( count( $post->tags ) > 0 )  { ?>
-                                <li class="meta-tags"><?php _e('Tagged:'); ?> <?php echo $post->tags_out; ?></li>
+                                <li class="meta-tags"><strong><?php _e('Tagged:'); ?></strong> <?php echo $post->tags_out; ?></li>
                                 <?php } ?>
                             </ul>
                         </div>
