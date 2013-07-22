@@ -224,6 +224,8 @@ li.github a:before {
     zoom: 1;
     vertical-align: top;
     *display: inline;
+    position: relative;
+    margin: 5px 0;
 }
 
 .meta ul li span {color: #868686;}
@@ -246,7 +248,35 @@ li.github a:before {
 }
 
 .meta li.meta-tags {
-    background: url('../img/tags.png') left center no-repeat;
+
+}
+
+.meta li.meta-date:before {
+    content: url('../img/compose.png');
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.meta li.meta-author:before {
+    content: url('../img/user.png');
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.meta li.meta-comments:before {
+    content: url('../img/plus.png');
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.meta li.meta-tags:before {
+    content: url('../img/tags.png');
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 /* Pagination */
@@ -637,6 +667,9 @@ textarea {
 @media handheld, only screen and (max-width:767px) {
     header h3 {width: 100%;}
     .sep {max-width: 100%;}
-    .meta ul li.meta-author {margin-left: 20px;}
-    .meta ul li.meta-comments {margin-top: 3px;margin-left: 0;}
+    .meta ul li {
+        display: list-item;
+        margin: 5px 0 !important;
+        padding: 0 25px !important;
+    }
 }
