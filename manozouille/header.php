@@ -35,7 +35,7 @@
             <div class="col-1-1">
                 <div class="content">
                     <h1><a href="<?php Site::out_url( 'habari'); ?>" title="<?php Options::out( 'title' ); ?>"> <?php Options::out( 'title' ); ?></a></h1>
-                    <h3>Retrouvez ici mes notes, textes, nouvelles et tous le contenu qui n'a pas sa place sur mon <a title="Mon blog" target="_blank" href="http://www.manoz.fr/">blog</a> principal :)</h3>
+                    <h3>Hi, I'm a description bloc. Something like a lorem ipsum. I can write here what I want, even a book. It's totally responsive :)</h3>
                     <div class="social">
                         <ul>
                             <li class="rss">
