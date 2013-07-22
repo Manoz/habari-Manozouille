@@ -34,10 +34,8 @@
         <div class="grid grid-pad">
             <div class="col-1-1">
                 <div class="content">
-                    <hgroup>
-                        <h1><a href="<?php Site::out_url( 'habari'); ?>" title="<?php Options::out( 'title' ); ?>"> <?php Options::out( 'title' ); ?></a></h1>
-                        <h2><?php Options::out( 'tagline' ); ?></h2>
-                    </hgroup>
+                    <h1><a href="<?php Site::out_url( 'habari'); ?>" title="<?php Options::out( 'title' ); ?>"> <?php Options::out( 'title' ); ?></a></h1>
+                    <h2><?php Options::out( 'tagline' ); ?></h2>
                     <div class="social">
                         <ul>
                             <li class="rss">
