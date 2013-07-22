@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<pluggable type="theme">
+	<name>Manozouille</name>
+	<class>manoz</class>
+	<license url="http://opensource.org/licenses/MIT">MIT</license>	
+	<author url="http://www.manoz.fr/">Manoz</author>
+	<version>1.0</version>
+	<url>http://www.manoz.fr/</url>
+	<description><![CDATA[Manozouille is my own Habari theme. Clean, simple, minimalist and of course, responsive. Fork it, clone it, download it, use it :)]]></description>
+	<template_engine>rawphpengine</template_engine>
+	<copyright>2013</copyright>
+	
+	<areas>
+		<area name="sidebar">
+			<description><![CDATA[Sidebar]]></description>
+		</area>
+	</areas>
+
+	<!-- Guid ready for the community. Todo : register and send this theme
+	<guid>F085317C-F25F-11E2-A984-A2D86188709B</guid>
+	-->
+</pluggable>
