@@ -247,10 +247,6 @@ li.github a:before {
     background: url('../img/plus.png') left center no-repeat;
 }
 
-.meta li.meta-tags {
-
-}
-
 .meta li.meta-date:before {
     content: url('../img/compose.png');
     position: absolute;
