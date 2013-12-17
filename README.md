@@ -4,7 +4,7 @@ Manozouille
 ### Description
 
 **Manozouille** is the first theme that I developed for Habari.
-You can see a demo here : http://notes.manoz.fr/ (french content).
+You can see a demo here : http://notes.mwanoz.fr/ (french content).
 
 I have to correct a lot of things (including the comments form) and add features to make it configurable from the admin pannel.
 Stay tuned, watch it, star it fork it :)
